@@ -1,0 +1,41 @@
+# pyproject.toml
+
+[tool.poetry]
+name = "sii_polygons"
+version = "0.1.0"
+description = "Repositorio de Procesamiento de Datos Geoespaciales del SII Chile."
+authors = ["Vicente Agüero <vicenteaguero@uc.cl>"]
+packages = [
+    { include = "sii_polygons", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "*"
+tqdm = "*"
+matplotlib = "*"
+numpy = "*"
+rarfile = "*"
+bs4 = "*"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+black = "^23.7.0"
+isort = "^5.10.1"
+pytest = "^8.3.4"
+ipykernel = "^6.29.5"
+
+[tool.black]
+line-length = 100
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+python_files = ["*.py"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
