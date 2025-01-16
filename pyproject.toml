@@ -17,6 +17,8 @@ matplotlib = "*"
 numpy = "*"
 rarfile = "*"
 bs4 = "*"
+geopandas = "^1.0.1"
+opencv-python = "^4.10.0.84"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "*"
