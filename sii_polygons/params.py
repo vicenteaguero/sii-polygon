@@ -1,5 +1,11 @@
 # sii_polygons/params.py
 
+import os
+
+################################################################################
+
+# Constants
+
 API_URLS = {
     'maps': 'https://www4.sii.cl/mapasui/services/ui/wmsProxyService/call'
 }
@@ -20,3 +26,25 @@ MAPS_PAYLOAD = {
     'eacano': '0',
     'srs': 'EPSG:3857',
 }
+
+################################################################################
+
+# Folders
+
+DATA_FOLDER = 'data'
+SRC_FOLDER = 'sii_polygons'
+
+PREDIOS_DATA_FOLDER = 'predios'
+
+################################################################################
+
+# Paths
+
+ROOT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+PATHS = {
+    'root': ROOT_PATH,
+    'data': os.path.join(ROOT_PATH, DATA_FOLDER),
+}
+
+PATHS['predios'] = os.path.join(PATHS['data'], PREDIOS_DATA_FOLDER)
