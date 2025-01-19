@@ -19,6 +19,9 @@ rarfile = "*"
 bs4 = "*"
 geopandas = "^1.0.1"
 opencv-python = "^4.10.0.84"
+contextily = "^1.6.2"
+mapclassify = "^2.8.1"
+folium = "^0.19.4"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "*"
