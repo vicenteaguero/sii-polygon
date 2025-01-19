@@ -48,3 +48,4 @@ PATHS = {
 }
 
 PATHS['predios'] = os.path.join(PATHS['data'], PREDIOS_DATA_FOLDER)
+PATHS['comunas'] = os.path.join(PATHS['data'], 'comunas.parquet')
