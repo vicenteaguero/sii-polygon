@@ -1,4 +1,6 @@
 line-length = 100
+fix = true
+output-format = "concise"
 lint.extend-select = [
   "Q", # flake8-quotes
   "N", # pep8-naming
